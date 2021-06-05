@@ -1,4 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  width: 320px;
+  background-color: silver;
+  border: 1px solid blue;
 }
 

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
+import './App.css'
+
 const App = () => {
-  const [name, setName] = useState('John Doe');
+  const [name, setName] = useState('');
 
   const alertName = () => {
     alert(name);
+    setName('')
   };
 
   const handleNameInput = e => {
@@ -12,16 +15,16 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h3>This is a Functional Component</h3>
+    <div className='App'>
+      <h3>Time 2 Learn React Hooks!</h3>
       <input
         type="text"
         onChange={handleNameInput}
         value={name}
-        placeholder="Your Name"
+        placeholder="Type your name"
       />
       <button onClick={alertName}>
-        Alert
+        Smash!
       </button>
     </div>
   );
