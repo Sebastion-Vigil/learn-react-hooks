@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import ChildOfApp from './ChildOfApp.js'
+
 import './App.css'
 
 function App() {
@@ -18,6 +20,9 @@ function App() {
 
   return (
     <div className='App'>
+      <ChildOfApp
+        txt={`What it do yo?`}
+      />
       <h3 id="header">This is a Functional Component</h3>
       <input
         type="text"
